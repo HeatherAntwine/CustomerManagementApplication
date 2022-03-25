@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddApptController">
+   <children>
+      <Label layoutX="131.0" layoutY="20.0" text="New Appointment">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="95.0" layoutY="87.0" prefHeight="342.0" prefWidth="268.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="99.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="223.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Type:" GridPane.rowIndex="1" />
+            <Label text="Title:" />
+            <Label text="End Time:" GridPane.rowIndex="7" />
+            <Label text="Start Time:" GridPane.rowIndex="6" />
+            <Label text="Day:" GridPane.rowIndex="5" />
+            <Label text="Consultant:" GridPane.rowIndex="3" />
+            <Label text="Location:" GridPane.rowIndex="2" />
+            <TextField fx:id="titleTF" prefHeight="25.0" prefWidth="51.0" GridPane.columnIndex="1" />
+            <ChoiceBox fx:id="typeCB" prefHeight="25.0" prefWidth="204.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox fx:id="endHourCB" prefHeight="25.0" prefWidth="83.0" />
+                        <ChoiceBox fx:id="endMinCB" prefHeight="25.0" prefWidth="83.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <ChoiceBox fx:id="startHourCB" prefHeight="25.0" prefWidth="83.0" />
+                  <ChoiceBox fx:id="startMinCB" prefHeight="25.0" prefWidth="83.0" />
+               </children>
+            </HBox>
+            <ChoiceBox fx:id="locationCB" prefHeight="25.0" prefWidth="222.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" text="September ">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <ChoiceBox fx:id="dateCB" prefHeight="25.0" prefWidth="86.0" />
+               </children>
+            </HBox>
+            <Label text="URL:" GridPane.rowIndex="4" />
+            <TextField fx:id="urlTF" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="consTF" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button fx:id="saveButt" layoutX="121.0" layoutY="447.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="72.0" text="Save" />
+      <Button fx:id="cancelButt" layoutX="274.0" layoutY="447.0" mnemonicParsing="false" onAction="#cancelButtAction" prefHeight="35.0" prefWidth="72.0" text="Cancel" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="95.0" layoutY="421.0" prefHeight="17.0" prefWidth="268.0" text="Please fill in all fields." textAlignment="CENTER" textFill="#dd0909" />
+      <TableView fx:id="custNameTV" layoutX="427.0" layoutY="32.0" prefHeight="449.0" prefWidth="268.0">
+         <columns>
+            <TableColumn fx:id="custNameCol" prefWidth="75.0" text="Customers" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

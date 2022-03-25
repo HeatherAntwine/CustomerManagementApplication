@@ -1,0 +1,122 @@
+Rubric Item A -
+located in:
+LoginController.java Lines 
+
+The log-in form has functionality to determine the user’s location and translate 
+log-in and error control messages into 2 languages. The code is complete and 
+functions properly.
+
+
+
+
+Rubric Item B -
+located in:
+ModApptController.java
+AddApptController.java 
+and via the GUI through running the program from the Appt screen - accessible via
+the mainDashboard
+
+The application has functionality to enter and maintain customer records in the 
+database, including name, address, and phone number. The code is complete and 
+functions properly.
+
+
+
+
+Rubric Item C - 
+located in:
+ModApptController.java Lines 213-223
+AddApptcontroller.java Lines 117 - 127
+
+The application code includes lambda expressions to schedule and maintain appointments, 
+capture the type of appointment, and link the appointments to the specific customer 
+record in the database. The code is complete and functions properly.
+
+
+
+
+Rubric Item D - 
+located in:
+ApptsController.java
+and via the GUI through running the program from the Appointments button on
+the mainDashboard - click the radio buttons to switch
+
+The application has functionality to view the calendar by month and by week. The 
+code is complete and functions properly.
+
+
+
+Rubric Item E - 	
+located in:
+AddApptController.java Line 258 - utilizes method found on lines 265-272
+ModApptController.java Line 254 - utilizes method found on lines 365-372
+
+The application has functionality to automatically adjust appointment times based 
+on user time zones and daylight saving time. The code is complete and 
+functions properly.
+
+
+
+Rubric Item F - 
+located in:
+A. & B. 
+AddApptContoller.java Lines 194-260
+ModApptContoller.java Lines 286-359
+
+C.
+AddCustController.java Lines 70-89
+ModCustController.java Lines 79-98
+
+D.
+LoginController.java Lines 152-156
+
+The application code includes exception controls to prevent each of the given 
+points and uses at least 2 different mechanisms. The code is complete and 
+functions properly.
+Given points:
+A. Scheduling an appointment outside business hours
+B. Scheduling overlapping appointments
+C. Entering nonexistent or invalid customer data
+D. Entering an incorrect username and password
+
+
+
+Rubric Item G -  
+located in:
+LoginController.java Lines 173-186
+The application code uses lambda expressions to create standard pop-up and alert 
+messages.  The code is complete and functions properly.
+
+
+
+
+Rubric Item H -  
+located in:
+LoginController.java Lines 173-186
+The application has functionality for reminders and alerts based on the user’s 
+log-in. The code is complete and functions properly.
+
+
+
+Rubric Item I - 
+located in:
+A. ReportApptTypesController.java
+B. ReportConsSchController.java
+C. ReportCustCountController.java - Shows the number of customers in the database
+The application has functionality to generate each of the given reports. The 
+code is complete and functions properly.
+Given reports:
+A. Number of appointment types by month
+B. Schedule for each consultant
+C. One additional Report of Your choice
+
+
+
+Rubric Item J - 
+located in:
+LoginTrackingFile.java
+LoginController.java Lines 124-130
+The application has functionality to track user activity by recording timestamps 
+for user log-ins in a .txt file, and each new record is appended to the log file 
+if the file already exists. The code is complete and functions properly.
+

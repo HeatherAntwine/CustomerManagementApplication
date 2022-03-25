@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ReportApptTypesController">
+   <children>
+      <GridPane layoutX="76.0" layoutY="89.0" prefHeight="274.0" prefWidth="378.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Appointment Type" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Initial Consult" GridPane.rowIndex="1" />
+            <Label text="Consultation" GridPane.rowIndex="2" />
+            <Label text="Appointment Count" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="initialLabel" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="consultLabel" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Lunch" GridPane.rowIndex="3" />
+            <Label text="Project Kickoff" GridPane.rowIndex="4" />
+            <Label text="Closing" GridPane.rowIndex="5" />
+            <Label fx:id="lunchLabel" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="kickoffLabel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="closingLabel" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button fx:id="backButt" layoutX="405.0" layoutY="388.0" mnemonicParsing="false" onAction="#backButtAction" prefHeight="45.0" prefWidth="68.0" text="Back" />
+      <Label layoutX="108.0" layoutY="14.0" text="Report: Appointment Types" textFill="#000000fb">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="57.0" text="September">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
